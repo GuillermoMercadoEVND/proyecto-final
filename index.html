@@ -11,68 +11,116 @@
             background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') no-repeat center center fixed;
             background-size: cover;
             color: white;
-            text-align: center;
         }
 
         .overlay {
-            background: rgba(0, 0, 0, 0.7);
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            background: rgba(0, 0, 0, 0.75);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
         }
 
         h1 {
-            font-size: 50px;
             color: #00ffcc;
+            font-size: 45px;
+            margin-bottom: 10px;
         }
 
         p {
-            font-size: 20px;
+            font-size: 18px;
         }
 
-        .box {
-            background: rgba(255, 255, 255, 0.1);
-            margin: 20px auto;
+        .main-box {
+            background: rgba(255,255,255,0.1);
             padding: 20px;
-            width: 60%;
-            border-radius: 10px;
+            border-radius: 12px;
+            margin-bottom: 40px;
         }
+
+        /* 🔥 SECCIÓN DE CARDS */
+        .updates {
+            margin-top: 20px;
+        }
+
+        .updates h2 {
+            color: #00ffcc;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.08);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            text-align: left;
+            border-left: 5px solid #00ffcc;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        .card h3 {
+            margin: 0;
+            color: #00ffcc;
+        }
+
+        .card p {
+            margin: 5px 0;
+        }
+
+        .date {
+            font-size: 12px;
+            color: #ccc;
+        }
+
     </style>
 </head>
 
 <body>
     <div class="overlay">
-        <h1>🚀 Servidor Fedora Activo</h1>
-        
-        <div class="box">
-            <p>Proyecto Final - Servidor Web</p>
-            <p>Integración con Git y GitHub</p>
-            <p>Usuarios y permisos configurados correctamente</p>
+        <div class="container">
+
+            <h1>🚀 Servidor Fedora Activo</h1>
+
+            <div class="main-box">
+                <p>Proyecto Final - Servidor Web</p>
+                <p>Integración con Git y GitHub</p>
+                <p>Usuarios y permisos configurados correctamente</p>
+                <p>Actualizado desde servidor y GitHub 🔥</p>
+            </div>
+
+            <!-- 🔥 ACTUALIZACIONES -->
+            <div class="updates">
+                <h2>📝 Últimas Actualizaciones</h2>
+
+                <div class="card">
+                    <h3>Versión 1.2</h3>
+                    <p>Se agregó diseño con fondo y estilos CSS.</p>
+                    <span class="date">31/03/2026</span>
+                </div>
+
+                <div class="card">
+                    <h3>Versión 1.1</h3>
+                    <p>Integración con GitHub y despliegue desde servidor.</p>
+                    <span class="date">30/03/2026</span>
+                </div>
+
+                <div class="card">
+                    <h3>Versión 1.0</h3>
+                    <p>Configuración inicial del servidor web en Fedora.</p>
+                    <span class="date">29/03/2026</span>
+                </div>
+
+            </div>
+
         </div>
-
-        <p>Actualizado desde servidor y GitHub 🔥</p>
     </div>
-    <div class="updates">
-    <h2>📝 Últimas Actualizaciones</h2>
-
-    <div class="update-item">
-        <h3>Versión 1.2</h3>
-        <p>Se agregó diseño con fondo y estilos CSS.</p>
-        <span>Fecha: 31/03/2026</span>
-    </div>
-
-    <div class="update-item">
-        <h3>Versión 1.1</h3>
-        <p>Integración con GitHub y despliegue desde servidor.</p>
-        <span>Fecha: 30/03/2026</span>
-    </div>
-
-    <div class="update-item">
-        <h3>Versión 1.0</h3>
-        <p>Configuración inicial del servidor web en Fedora.</p>
-        <span>Fecha: 29/03/2026</span>
-    </div>
-</div>
 </body>
 </html>
